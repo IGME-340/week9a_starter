@@ -30,8 +30,8 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   // A big photo on purpose (about 2 MB), so you can tell when it's downloading.
-  String myImage =
-      "https://people.rit.edu/~dxcigm/340/assets/images/nms_big.jpg";
+  // Its server allows requests from Chrome (CORS). Android doesn't need that, but web does.
+  String myImage = "https://people.rit.edu/~jxtadm/340/nms_big.jpg";
 
   final nameController = TextEditingController();
   final emailController = TextEditingController();
